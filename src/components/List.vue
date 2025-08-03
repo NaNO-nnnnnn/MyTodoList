@@ -18,7 +18,6 @@ const listEl = ref()
 // 删除淡出动画实现
 const deleteList = (list) => {
     let opacity = 1
-    // 如果不使用async而是newPromise的话会怎么样？？？
     const asFunc = async () => {
         await new Promise((resolve) => {
             let temp = setInterval(() => {
