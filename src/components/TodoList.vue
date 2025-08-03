@@ -29,7 +29,7 @@ const storage = localStorage.getItem('lists') || []
 
 let count = ref(0)
 let newList = reactive({ text: '', isCompleted: false })
-let allLists = ref([])
+let allLists = reactive([])
 let showContent = ref('all')
 
 // 要显示的任务列表
